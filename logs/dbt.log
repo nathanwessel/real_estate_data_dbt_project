@@ -55,3 +55,1302 @@
 [0m01:00:50.536130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107794d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10710ceb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10782cdf0>]}
 [0m01:00:50.536784 [debug] [MainThread]: Flushing usage events
 [0m01:00:51.237049 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-07-03 16:33:13.283100 | 1e1310ed-b0bf-44fe-80d7-40f3614bdcfe ==============================
+[0m16:33:13.283100 [info ] [MainThread]: Running with dbt=1.4.5
+[0m16:33:13.284778 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/nathanwessel/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m16:33:13.284957 [debug] [MainThread]: Tracking: tracking
+[0m16:33:13.306170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1212a3670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1212a3a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1212a3ca0>]}
+[0m16:33:13.308134 [debug] [MainThread]: Set downloads directory='/var/folders/bc/hzhmpw894rxgr_jl9kxy34km0000gn/T/dbt-downloads-ut96ktzq'
+[0m16:33:13.308693 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:33:13.696107 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:33:13.696764 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:33:13.992088 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:33:13.999511 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:33:14.424095 [info ] [MainThread]:   Installed from version 1.1.1
+[0m16:33:14.424422 [info ] [MainThread]:   Up to date!
+[0m16:33:14.424704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '1e1310ed-b0bf-44fe-80d7-40f3614bdcfe', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1212a3d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1212a17b0>]}
+[0m16:33:14.425749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1212a1810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1212a3a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1212a38e0>]}
+[0m16:33:14.426218 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-07-03 16:56:43.981060 | cef37afd-915d-4868-bd5f-a325152b9818 ==============================
+[0m16:56:43.981060 [info ] [MainThread]: Running with dbt=1.4.5
+[0m16:56:43.984562 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/nathanwessel/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'which': 'test', 'rpc_method': 'test'}
+[0m16:56:43.984880 [debug] [MainThread]: Tracking: tracking
+[0m16:56:43.985625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109523010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109520c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109521e40>]}
+[0m16:56:44.048372 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m16:56:44.053842 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m16:56:44.054121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'cef37afd-915d-4868-bd5f-a325152b9818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106901e70>]}
+[0m16:56:44.810167 [debug] [MainThread]: 1699: static parser successfully parsed staging/property_sale_listings/stg_property_sale_listings.sql
+[0m16:56:44.819239 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m16:56:44.821830 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m16:56:44.891432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cef37afd-915d-4868-bd5f-a325152b9818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109fe3e80>]}
+[0m16:56:44.897601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cef37afd-915d-4868-bd5f-a325152b9818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f94d00>]}
+[0m16:56:44.897846 [info ] [MainThread]: Found 3 models, 6 tests, 0 snapshots, 0 analyses, 420 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m16:56:44.898069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cef37afd-915d-4868-bd5f-a325152b9818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10315fd00>]}
+[0m16:56:44.899276 [info ] [MainThread]: 
+[0m16:56:44.901323 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:56:44.902234 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_DBT_NDW'
+[0m16:56:44.912393 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DBT_NDW"
+[0m16:56:44.912644 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS_DBT_NDW"} */
+show terse objects in ANALYTICS.DBT_NDW
+[0m16:56:44.912794 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:56:46.711110 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 2 seconds
+[0m16:56:46.712540 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: Close
+[0m16:56:46.874021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cef37afd-915d-4868-bd5f-a325152b9818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f08ca0>]}
+[0m16:56:46.875158 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:56:46.875627 [info ] [MainThread]: 
+[0m16:56:46.880108 [debug] [Thread-1 (]: Began running node test.real_estate_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:56:46.880365 [info ] [Thread-1 (]: 1 of 6 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m16:56:46.880875 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.real_estate_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m16:56:46.881056 [debug] [Thread-1 (]: Began compiling node test.real_estate_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:56:46.891662 [debug] [Thread-1 (]: Writing injected SQL for node "test.real_estate_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:56:46.893079 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 2023-07-03 16:56:46.881163 => 2023-07-03 16:56:46.893018
+[0m16:56:46.893291 [debug] [Thread-1 (]: Began executing node test.real_estate_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:56:46.914703 [debug] [Thread-1 (]: Writing runtime sql for node "test.real_estate_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:56:46.916256 [debug] [Thread-1 (]: Using snowflake connection "test.real_estate_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:56:46.916698 [debug] [Thread-1 (]: On test.real_estate_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "test.real_estate_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from ANALYTICS.DBT_NDW.my_first_dbt_model
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m16:56:46.916983 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:56:47.520894 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad6218-0504-9f48-0050-3987000a41ce
+[0m16:56:47.521141 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'ANALYTICS.DBT_NDW.MY_FIRST_DBT_MODEL' does not exist or not authorized.
+[0m16:56:47.521361 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 2023-07-03 16:56:46.893408 => 2023-07-03 16:56:47.521322
+[0m16:56:47.521504 [debug] [Thread-1 (]: On test.real_estate_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m16:56:47.688790 [debug] [Thread-1 (]: Database Error in test not_null_my_first_dbt_model_id (models/example/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'ANALYTICS.DBT_NDW.MY_FIRST_DBT_MODEL' does not exist or not authorized.
+  compiled Code at target/run/real_estate_dbt_project/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+[0m16:56:47.689151 [error] [Thread-1 (]: 1 of 6 ERROR not_null_my_first_dbt_model_id .................................... [[31mERROR[0m in 0.81s]
+[0m16:56:47.690663 [debug] [Thread-1 (]: Finished running node test.real_estate_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:56:47.691207 [debug] [Thread-1 (]: Began running node test.real_estate_dbt_project.not_null_my_second_dbt_model_id.151b76d778
+[0m16:56:47.691742 [info ] [Thread-1 (]: 2 of 6 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m16:56:47.692671 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.real_estate_dbt_project.not_null_my_second_dbt_model_id.151b76d778'
+[0m16:56:47.693068 [debug] [Thread-1 (]: Began compiling node test.real_estate_dbt_project.not_null_my_second_dbt_model_id.151b76d778
+[0m16:56:47.698794 [debug] [Thread-1 (]: Writing injected SQL for node "test.real_estate_dbt_project.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:56:47.699426 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.not_null_my_second_dbt_model_id.151b76d778 (compile): 2023-07-03 16:56:47.693311 => 2023-07-03 16:56:47.699367
+[0m16:56:47.699631 [debug] [Thread-1 (]: Began executing node test.real_estate_dbt_project.not_null_my_second_dbt_model_id.151b76d778
+[0m16:56:47.746899 [debug] [Thread-1 (]: Writing runtime sql for node "test.real_estate_dbt_project.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:56:47.748054 [debug] [Thread-1 (]: Using snowflake connection "test.real_estate_dbt_project.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:56:47.748214 [debug] [Thread-1 (]: On test.real_estate_dbt_project.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "test.real_estate_dbt_project.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from ANALYTICS.DBT_NDW.my_second_dbt_model
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m16:56:47.748346 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:56:48.564056 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad6218-0504-9e30-0050-3987000a0162
+[0m16:56:48.564553 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'ANALYTICS.DBT_NDW.MY_SECOND_DBT_MODEL' does not exist or not authorized.
+[0m16:56:48.565252 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.not_null_my_second_dbt_model_id.151b76d778 (execute): 2023-07-03 16:56:47.699748 => 2023-07-03 16:56:48.565133
+[0m16:56:48.565640 [debug] [Thread-1 (]: On test.real_estate_dbt_project.not_null_my_second_dbt_model_id.151b76d778: Close
+[0m16:56:48.724364 [debug] [Thread-1 (]: Database Error in test not_null_my_second_dbt_model_id (models/example/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'ANALYTICS.DBT_NDW.MY_SECOND_DBT_MODEL' does not exist or not authorized.
+  compiled Code at target/run/real_estate_dbt_project/models/example/schema.yml/not_null_my_second_dbt_model_id.sql
+[0m16:56:48.725039 [error] [Thread-1 (]: 2 of 6 ERROR not_null_my_second_dbt_model_id ................................... [[31mERROR[0m in 1.03s]
+[0m16:56:48.725534 [debug] [Thread-1 (]: Finished running node test.real_estate_dbt_project.not_null_my_second_dbt_model_id.151b76d778
+[0m16:56:48.725959 [debug] [Thread-1 (]: Began running node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m16:56:48.726433 [info ] [Thread-1 (]: 3 of 6 START test source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID  [RUN]
+[0m16:56:48.728205 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46'
+[0m16:56:48.728463 [debug] [Thread-1 (]: Began compiling node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m16:56:48.733881 [debug] [Thread-1 (]: Writing injected SQL for node "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"
+[0m16:56:48.735031 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46 (compile): 2023-07-03 16:56:48.728594 => 2023-07-03 16:56:48.734844
+[0m16:56:48.735521 [debug] [Thread-1 (]: Began executing node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m16:56:48.738452 [debug] [Thread-1 (]: Writing runtime sql for node "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"
+[0m16:56:48.739539 [debug] [Thread-1 (]: Using snowflake connection "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"
+[0m16:56:48.739696 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select _AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID
+from raw.realty_mole_property_api.property_sale_listings
+where _AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID is null
+
+
+
+      
+    ) dbt_internal_test
+[0m16:56:48.739846 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:56:49.711577 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad6218-0504-9fbb-0050-3987000a60ca
+[0m16:56:49.712187 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Database 'RAW' does not exist or not authorized.
+[0m16:56:49.712637 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46 (execute): 2023-07-03 16:56:48.735804 => 2023-07-03 16:56:49.712558
+[0m16:56:49.712939 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46: Close
+[0m16:56:49.861498 [debug] [Thread-1 (]: Database Error in test source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID (models/staging/property_sale_listings/src_property_sale_listings.yml)
+  002003 (02000): SQL compilation error:
+  Database 'RAW' does not exist or not authorized.
+  compiled Code at target/run/real_estate_dbt_project/models/staging/property_sale_listings/src_property_sale_listings.yml/source_not_null_realty_mole_pr_3bb4300005e774a0ca7597884dbca3b7.sql
+[0m16:56:49.862212 [error] [Thread-1 (]: 3 of 6 ERROR source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID  [[31mERROR[0m in 1.14s]
+[0m16:56:49.862745 [debug] [Thread-1 (]: Finished running node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m16:56:49.863411 [debug] [Thread-1 (]: Began running node test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0
+[0m16:56:49.863923 [info ] [Thread-1 (]: 4 of 6 START test source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID  [RUN]
+[0m16:56:49.864945 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0'
+[0m16:56:49.865406 [debug] [Thread-1 (]: Began compiling node test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0
+[0m16:56:49.873528 [debug] [Thread-1 (]: Writing injected SQL for node "test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0"
+[0m16:56:49.874157 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0 (compile): 2023-07-03 16:56:49.865660 => 2023-07-03 16:56:49.874105
+[0m16:56:49.874359 [debug] [Thread-1 (]: Began executing node test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0
+[0m16:56:49.878187 [debug] [Thread-1 (]: Writing runtime sql for node "test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0"
+[0m16:56:49.879941 [debug] [Thread-1 (]: Using snowflake connection "test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0"
+[0m16:56:49.880367 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    _AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID as unique_field,
+    count(*) as n_records
+
+from raw.realty_mole_property_api.property_sale_listings
+where _AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID is not null
+group by _AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m16:56:49.880711 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:56:50.645981 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad6218-0504-9fbb-0050-3987000a60ce
+[0m16:56:50.646440 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Database 'RAW' does not exist or not authorized.
+[0m16:56:50.646871 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0 (execute): 2023-07-03 16:56:49.874482 => 2023-07-03 16:56:50.646790
+[0m16:56:50.647166 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0: Close
+[0m16:56:50.820221 [debug] [Thread-1 (]: Database Error in test source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID (models/staging/property_sale_listings/src_property_sale_listings.yml)
+  002003 (02000): SQL compilation error:
+  Database 'RAW' does not exist or not authorized.
+  compiled Code at target/run/real_estate_dbt_project/models/staging/property_sale_listings/src_property_sale_listings.yml/source_unique_realty_mole_prop_63c5f22da60d46a3fd1151a3a7ff960c.sql
+[0m16:56:50.820909 [error] [Thread-1 (]: 4 of 6 ERROR source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID  [[31mERROR[0m in 0.96s]
+[0m16:56:50.821425 [debug] [Thread-1 (]: Finished running node test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0
+[0m16:56:50.821880 [debug] [Thread-1 (]: Began running node test.real_estate_dbt_project.unique_my_first_dbt_model_id.16e066b321
+[0m16:56:50.822290 [info ] [Thread-1 (]: 5 of 6 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m16:56:50.823526 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.real_estate_dbt_project.unique_my_first_dbt_model_id.16e066b321'
+[0m16:56:50.823906 [debug] [Thread-1 (]: Began compiling node test.real_estate_dbt_project.unique_my_first_dbt_model_id.16e066b321
+[0m16:56:50.829789 [debug] [Thread-1 (]: Writing injected SQL for node "test.real_estate_dbt_project.unique_my_first_dbt_model_id.16e066b321"
+[0m16:56:50.830345 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.unique_my_first_dbt_model_id.16e066b321 (compile): 2023-07-03 16:56:50.824124 => 2023-07-03 16:56:50.830296
+[0m16:56:50.830534 [debug] [Thread-1 (]: Began executing node test.real_estate_dbt_project.unique_my_first_dbt_model_id.16e066b321
+[0m16:56:50.833249 [debug] [Thread-1 (]: Writing runtime sql for node "test.real_estate_dbt_project.unique_my_first_dbt_model_id.16e066b321"
+[0m16:56:50.834563 [debug] [Thread-1 (]: Using snowflake connection "test.real_estate_dbt_project.unique_my_first_dbt_model_id.16e066b321"
+[0m16:56:50.834776 [debug] [Thread-1 (]: On test.real_estate_dbt_project.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "test.real_estate_dbt_project.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from ANALYTICS.DBT_NDW.my_first_dbt_model
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m16:56:50.834937 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:56:51.478355 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad6218-0504-9fbb-0050-3987000a60d2
+[0m16:56:51.478789 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'ANALYTICS.DBT_NDW.MY_FIRST_DBT_MODEL' does not exist or not authorized.
+[0m16:56:51.479211 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.unique_my_first_dbt_model_id.16e066b321 (execute): 2023-07-03 16:56:50.830648 => 2023-07-03 16:56:51.479131
+[0m16:56:51.479594 [debug] [Thread-1 (]: On test.real_estate_dbt_project.unique_my_first_dbt_model_id.16e066b321: Close
+[0m16:56:51.617199 [debug] [Thread-1 (]: Database Error in test unique_my_first_dbt_model_id (models/example/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'ANALYTICS.DBT_NDW.MY_FIRST_DBT_MODEL' does not exist or not authorized.
+  compiled Code at target/run/real_estate_dbt_project/models/example/schema.yml/unique_my_first_dbt_model_id.sql
+[0m16:56:51.617548 [error] [Thread-1 (]: 5 of 6 ERROR unique_my_first_dbt_model_id ...................................... [[31mERROR[0m in 0.79s]
+[0m16:56:51.617802 [debug] [Thread-1 (]: Finished running node test.real_estate_dbt_project.unique_my_first_dbt_model_id.16e066b321
+[0m16:56:51.618039 [debug] [Thread-1 (]: Began running node test.real_estate_dbt_project.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:56:51.618368 [info ] [Thread-1 (]: 6 of 6 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m16:56:51.618901 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.real_estate_dbt_project.unique_my_second_dbt_model_id.57a0f8c493'
+[0m16:56:51.619063 [debug] [Thread-1 (]: Began compiling node test.real_estate_dbt_project.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:56:51.622113 [debug] [Thread-1 (]: Writing injected SQL for node "test.real_estate_dbt_project.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:56:51.622610 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.unique_my_second_dbt_model_id.57a0f8c493 (compile): 2023-07-03 16:56:51.619169 => 2023-07-03 16:56:51.622568
+[0m16:56:51.622765 [debug] [Thread-1 (]: Began executing node test.real_estate_dbt_project.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:56:51.624697 [debug] [Thread-1 (]: Writing runtime sql for node "test.real_estate_dbt_project.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:56:51.625346 [debug] [Thread-1 (]: Using snowflake connection "test.real_estate_dbt_project.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:56:51.625470 [debug] [Thread-1 (]: On test.real_estate_dbt_project.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "test.real_estate_dbt_project.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from ANALYTICS.DBT_NDW.my_second_dbt_model
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m16:56:51.625583 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:56:52.429049 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad6218-0504-9f48-0050-3987000a41d2
+[0m16:56:52.429462 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'ANALYTICS.DBT_NDW.MY_SECOND_DBT_MODEL' does not exist or not authorized.
+[0m16:56:52.429872 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.unique_my_second_dbt_model_id.57a0f8c493 (execute): 2023-07-03 16:56:51.622865 => 2023-07-03 16:56:52.429799
+[0m16:56:52.430143 [debug] [Thread-1 (]: On test.real_estate_dbt_project.unique_my_second_dbt_model_id.57a0f8c493: Close
+[0m16:56:52.582925 [debug] [Thread-1 (]: Database Error in test unique_my_second_dbt_model_id (models/example/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'ANALYTICS.DBT_NDW.MY_SECOND_DBT_MODEL' does not exist or not authorized.
+  compiled Code at target/run/real_estate_dbt_project/models/example/schema.yml/unique_my_second_dbt_model_id.sql
+[0m16:56:52.583311 [error] [Thread-1 (]: 6 of 6 ERROR unique_my_second_dbt_model_id ..................................... [[31mERROR[0m in 0.96s]
+[0m16:56:52.583594 [debug] [Thread-1 (]: Finished running node test.real_estate_dbt_project.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:56:52.585134 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:56:52.586014 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:56:52.586346 [debug] [MainThread]: Connection 'test.real_estate_dbt_project.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m16:56:52.586824 [info ] [MainThread]: 
+[0m16:56:52.587635 [info ] [MainThread]: Finished running 6 tests in 0 hours 0 minutes and 7.69 seconds (7.69s).
+[0m16:56:52.588083 [debug] [MainThread]: Command end result
+[0m16:56:52.596898 [info ] [MainThread]: 
+[0m16:56:52.597230 [info ] [MainThread]: [31mCompleted with 6 errors and 0 warnings:[0m
+[0m16:56:52.597418 [info ] [MainThread]: 
+[0m16:56:52.597600 [error] [MainThread]: [33mDatabase Error in test not_null_my_first_dbt_model_id (models/example/schema.yml)[0m
+[0m16:56:52.597822 [error] [MainThread]:   002003 (42S02): SQL compilation error:
+[0m16:56:52.598434 [error] [MainThread]:   Object 'ANALYTICS.DBT_NDW.MY_FIRST_DBT_MODEL' does not exist or not authorized.
+[0m16:56:52.598922 [error] [MainThread]:   compiled Code at target/run/real_estate_dbt_project/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+[0m16:56:52.599458 [info ] [MainThread]: 
+[0m16:56:52.600091 [error] [MainThread]: [33mDatabase Error in test not_null_my_second_dbt_model_id (models/example/schema.yml)[0m
+[0m16:56:52.600532 [error] [MainThread]:   002003 (42S02): SQL compilation error:
+[0m16:56:52.601008 [error] [MainThread]:   Object 'ANALYTICS.DBT_NDW.MY_SECOND_DBT_MODEL' does not exist or not authorized.
+[0m16:56:52.601823 [error] [MainThread]:   compiled Code at target/run/real_estate_dbt_project/models/example/schema.yml/not_null_my_second_dbt_model_id.sql
+[0m16:56:52.602495 [info ] [MainThread]: 
+[0m16:56:52.603303 [error] [MainThread]: [33mDatabase Error in test source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID (models/staging/property_sale_listings/src_property_sale_listings.yml)[0m
+[0m16:56:52.604097 [error] [MainThread]:   002003 (02000): SQL compilation error:
+[0m16:56:52.604651 [error] [MainThread]:   Database 'RAW' does not exist or not authorized.
+[0m16:56:52.605142 [error] [MainThread]:   compiled Code at target/run/real_estate_dbt_project/models/staging/property_sale_listings/src_property_sale_listings.yml/source_not_null_realty_mole_pr_3bb4300005e774a0ca7597884dbca3b7.sql
+[0m16:56:52.605481 [info ] [MainThread]: 
+[0m16:56:52.605680 [error] [MainThread]: [33mDatabase Error in test source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID (models/staging/property_sale_listings/src_property_sale_listings.yml)[0m
+[0m16:56:52.606224 [error] [MainThread]:   002003 (02000): SQL compilation error:
+[0m16:56:52.606582 [error] [MainThread]:   Database 'RAW' does not exist or not authorized.
+[0m16:56:52.606838 [error] [MainThread]:   compiled Code at target/run/real_estate_dbt_project/models/staging/property_sale_listings/src_property_sale_listings.yml/source_unique_realty_mole_prop_63c5f22da60d46a3fd1151a3a7ff960c.sql
+[0m16:56:52.609261 [info ] [MainThread]: 
+[0m16:56:52.609451 [error] [MainThread]: [33mDatabase Error in test unique_my_first_dbt_model_id (models/example/schema.yml)[0m
+[0m16:56:52.609634 [error] [MainThread]:   002003 (42S02): SQL compilation error:
+[0m16:56:52.609796 [error] [MainThread]:   Object 'ANALYTICS.DBT_NDW.MY_FIRST_DBT_MODEL' does not exist or not authorized.
+[0m16:56:52.610054 [error] [MainThread]:   compiled Code at target/run/real_estate_dbt_project/models/example/schema.yml/unique_my_first_dbt_model_id.sql
+[0m16:56:52.610323 [info ] [MainThread]: 
+[0m16:56:52.610512 [error] [MainThread]: [33mDatabase Error in test unique_my_second_dbt_model_id (models/example/schema.yml)[0m
+[0m16:56:52.610679 [error] [MainThread]:   002003 (42S02): SQL compilation error:
+[0m16:56:52.610839 [error] [MainThread]:   Object 'ANALYTICS.DBT_NDW.MY_SECOND_DBT_MODEL' does not exist or not authorized.
+[0m16:56:52.610996 [error] [MainThread]:   compiled Code at target/run/real_estate_dbt_project/models/example/schema.yml/unique_my_second_dbt_model_id.sql
+[0m16:56:52.611195 [info ] [MainThread]: 
+[0m16:56:52.611388 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=6 SKIP=0 TOTAL=6
+[0m16:56:52.611638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094ca200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096f29e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096f2e60>]}
+[0m16:56:52.611847 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-07-03 16:58:00.789715 | 40a99208-a176-44f1-86e0-02369da66ebb ==============================
+[0m16:58:00.789715 [info ] [MainThread]: Running with dbt=1.4.5
+[0m16:58:00.793406 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/nathanwessel/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m16:58:00.793859 [debug] [MainThread]: Tracking: tracking
+[0m16:58:00.794184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108323010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108320c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108321e40>]}
+[0m16:58:00.847294 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m16:58:00.884305 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 51 files added, 0 files changed.
+[0m16:58:00.884699 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/union.sql
+[0m16:58:00.884890 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_single_value.sql
+[0m16:58:00.885053 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/safe_divide.sql
+[0m16:58:00.885207 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/groupby.sql
+[0m16:58:00.885359 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_relations_by_prefix.sql
+[0m16:58:00.885511 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_relations_by_pattern.sql
+[0m16:58:00.885654 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/surrogate_key.sql
+[0m16:58:00.885803 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/relationships_where.sql
+[0m16:58:00.885947 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/at_least_one.sql
+[0m16:58:00.886093 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_table_types_sql.sql
+[0m16:58:00.886263 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/web/get_url_parameter.sql
+[0m16:58:00.886405 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/nullcheck_table.sql
+[0m16:58:00.886548 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/generate_surrogate_key.sql
+[0m16:58:00.886688 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/not_empty_string.sql
+[0m16:58:00.886829 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_tables_by_prefix_sql.sql
+[0m16:58:00.886968 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_column_values.sql
+[0m16:58:00.887108 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/web/get_url_path.sql
+[0m16:58:00.887245 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/pretty_time.sql
+[0m16:58:00.887540 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/mutually_exclusive_ranges.sql
+[0m16:58:00.887722 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/fewer_rows_than.sql
+[0m16:58:00.887881 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/cardinality_equality.sql
+[0m16:58:00.888031 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/generate_series.sql
+[0m16:58:00.888180 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/recency.sql
+[0m16:58:00.888324 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/pivot.sql
+[0m16:58:00.888525 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/pretty_log_format.sql
+[0m16:58:00.888673 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/haversine_distance.sql
+[0m16:58:00.888814 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/equal_rowcount.sql
+[0m16:58:00.888952 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/equality.sql
+[0m16:58:00.889092 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/nullcheck.sql
+[0m16:58:00.889229 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/width_bucket.sql
+[0m16:58:00.889375 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/accepted_range.sql
+[0m16:58:00.889514 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/safe_subtract.sql
+[0m16:58:00.889651 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/safe_add.sql
+[0m16:58:00.889790 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/not_null_proportion.sql
+[0m16:58:00.889930 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/log_info.sql
+[0m16:58:00.890073 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/web/get_url_host.sql
+[0m16:58:00.890211 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/deduplicate.sql
+[0m16:58:00.890351 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/slugify.sql
+[0m16:58:00.890493 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_query_results_as_dict.sql
+[0m16:58:00.890655 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_tables_by_pattern_sql.sql
+[0m16:58:00.890793 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/expression_is_true.sql
+[0m16:58:00.890932 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/date_spine.sql
+[0m16:58:00.891081 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/unique_combination_of_columns.sql
+[0m16:58:00.891221 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/not_constant.sql
+[0m16:58:00.891368 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/not_accepted_values.sql
+[0m16:58:00.891507 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/_is_relation.sql
+[0m16:58:00.891646 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/star.sql
+[0m16:58:00.891783 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_filtered_columns_in_relation.sql
+[0m16:58:00.891920 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/unpivot.sql
+[0m16:58:00.892090 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/sequential_values.sql
+[0m16:58:00.892232 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/_is_ephemeral.sql
+[0m16:58:00.892528 [debug] [MainThread]: Partial parsing: deleted file: real_estate_dbt_project://models/example/my_first_dbt_model.sql
+[0m16:58:00.892658 [debug] [MainThread]: Partial parsing: deleted file: real_estate_dbt_project://models/example/my_second_dbt_model.sql
+[0m16:58:01.118105 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.real_estate_dbt_project.example
+[0m16:58:01.126317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '40a99208-a176-44f1-86e0-02369da66ebb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084d6050>]}
+[0m16:58:01.137004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '40a99208-a176-44f1-86e0-02369da66ebb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10849a410>]}
+[0m16:58:01.137797 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 420 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m16:58:01.138403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '40a99208-a176-44f1-86e0-02369da66ebb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10848f7c0>]}
+[0m16:58:01.139396 [info ] [MainThread]: 
+[0m16:58:01.141329 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:58:01.142410 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m16:58:01.159958 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m16:58:01.160265 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m16:58:01.160430 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:58:02.299525 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1 seconds
+[0m16:58:02.300817 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m16:58:02.449220 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_DBT_NDW'
+[0m16:58:02.454737 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DBT_NDW"
+[0m16:58:02.454955 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS_DBT_NDW"} */
+show terse objects in ANALYTICS.DBT_NDW
+[0m16:58:02.455109 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:58:03.342674 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1 seconds
+[0m16:58:03.345751 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: Close
+[0m16:58:03.496440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '40a99208-a176-44f1-86e0-02369da66ebb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10849ad70>]}
+[0m16:58:03.497688 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:58:03.498268 [info ] [MainThread]: 
+[0m16:58:03.502773 [debug] [Thread-1 (]: Began running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m16:58:03.503142 [info ] [Thread-1 (]: 1 of 1 START sql view model DBT_NDW.stg_property_sale_listings ................. [RUN]
+[0m16:58:03.503922 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.real_estate_dbt_project.stg_property_sale_listings'
+[0m16:58:03.504371 [debug] [Thread-1 (]: Began compiling node model.real_estate_dbt_project.stg_property_sale_listings
+[0m16:58:03.509417 [debug] [Thread-1 (]: Writing injected SQL for node "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m16:58:03.510006 [debug] [Thread-1 (]: Timing info for model.real_estate_dbt_project.stg_property_sale_listings (compile): 2023-07-03 16:58:03.504650 => 2023-07-03 16:58:03.509874
+[0m16:58:03.510337 [debug] [Thread-1 (]: Began executing node model.real_estate_dbt_project.stg_property_sale_listings
+[0m16:58:03.551883 [debug] [Thread-1 (]: Writing runtime sql for node "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m16:58:03.553464 [debug] [Thread-1 (]: Using snowflake connection "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m16:58:03.554048 [debug] [Thread-1 (]: On model.real_estate_dbt_project.stg_property_sale_listings: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "model.real_estate_dbt_project.stg_property_sale_listings"} */
+create or replace   view ANALYTICS.DBT_NDW.stg_property_sale_listings
+  
+   as (
+    select * from raw.realty_mole_property_api.property_sale_listings
+  );
+[0m16:58:03.554464 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:58:04.380997 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad621a-0504-9e30-0050-3987000a016e
+[0m16:58:04.381253 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on schema 'DBT_NDW'
+[0m16:58:04.381480 [debug] [Thread-1 (]: Timing info for model.real_estate_dbt_project.stg_property_sale_listings (execute): 2023-07-03 16:58:03.510467 => 2023-07-03 16:58:04.381439
+[0m16:58:04.381624 [debug] [Thread-1 (]: On model.real_estate_dbt_project.stg_property_sale_listings: Close
+[0m16:58:04.538031 [debug] [Thread-1 (]: Database Error in model stg_property_sale_listings (models/staging/property_sale_listings/stg_property_sale_listings.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'DBT_NDW'
+  compiled Code at target/run/real_estate_dbt_project/models/staging/property_sale_listings/stg_property_sale_listings.sql
+[0m16:58:04.538736 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '40a99208-a176-44f1-86e0-02369da66ebb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109757430>]}
+[0m16:58:04.539335 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model DBT_NDW.stg_property_sale_listings ........ [[31mERROR[0m in 1.04s]
+[0m16:58:04.541537 [debug] [Thread-1 (]: Finished running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m16:58:04.542704 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:58:04.543111 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:58:04.543249 [debug] [MainThread]: Connection 'model.real_estate_dbt_project.stg_property_sale_listings' was properly closed.
+[0m16:58:04.543395 [info ] [MainThread]: 
+[0m16:58:04.543604 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.40 seconds (3.40s).
+[0m16:58:04.544001 [debug] [MainThread]: Command end result
+[0m16:58:04.550240 [info ] [MainThread]: 
+[0m16:58:04.550597 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m16:58:04.550796 [info ] [MainThread]: 
+[0m16:58:04.550980 [error] [MainThread]: [33mDatabase Error in model stg_property_sale_listings (models/staging/property_sale_listings/stg_property_sale_listings.sql)[0m
+[0m16:58:04.551253 [error] [MainThread]:   003001 (42501): SQL access control error:
+[0m16:58:04.551430 [error] [MainThread]:   Insufficient privileges to operate on schema 'DBT_NDW'
+[0m16:58:04.551906 [error] [MainThread]:   compiled Code at target/run/real_estate_dbt_project/models/staging/property_sale_listings/stg_property_sale_listings.sql
+[0m16:58:04.552304 [info ] [MainThread]: 
+[0m16:58:04.552831 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:58:04.553444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108499e40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108498e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084996c0>]}
+[0m16:58:04.553862 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-07-03 16:58:25.828164 | 7508af0c-3a5d-4f9a-85f9-525dfb4c8117 ==============================
+[0m16:58:25.828164 [info ] [MainThread]: Running with dbt=1.4.5
+[0m16:58:25.837006 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/nathanwessel/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m16:58:25.838253 [debug] [MainThread]: Tracking: tracking
+[0m16:58:25.838600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111fbae00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112125450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112125420>]}
+[0m16:58:25.904816 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m16:58:25.949388 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:58:25.949759 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:58:25.950522 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.real_estate_dbt_project.example
+[0m16:58:25.957650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7508af0c-3a5d-4f9a-85f9-525dfb4c8117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d600d0>]}
+[0m16:58:25.963834 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7508af0c-3a5d-4f9a-85f9-525dfb4c8117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d29990>]}
+[0m16:58:25.964124 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 420 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m16:58:25.964511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7508af0c-3a5d-4f9a-85f9-525dfb4c8117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b25960>]}
+[0m16:58:25.966150 [info ] [MainThread]: 
+[0m16:58:25.968095 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:58:25.969083 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m16:58:25.981873 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m16:58:25.982162 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m16:58:25.982371 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:58:26.962534 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1 seconds
+[0m16:58:26.964824 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m16:58:27.151940 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_DBT_NDW'
+[0m16:58:27.160060 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DBT_NDW"
+[0m16:58:27.160296 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS_DBT_NDW"} */
+show terse objects in ANALYTICS.DBT_NDW
+[0m16:58:27.160442 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:58:28.048579 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1 seconds
+[0m16:58:28.050960 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: Close
+[0m16:58:28.204374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7508af0c-3a5d-4f9a-85f9-525dfb4c8117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d0efe0>]}
+[0m16:58:28.205347 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:58:28.205790 [info ] [MainThread]: 
+[0m16:58:28.210351 [debug] [Thread-1 (]: Began running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m16:58:28.211033 [info ] [Thread-1 (]: 1 of 1 START sql view model DBT_NDW.stg_property_sale_listings ................. [RUN]
+[0m16:58:28.211678 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.real_estate_dbt_project.stg_property_sale_listings'
+[0m16:58:28.211862 [debug] [Thread-1 (]: Began compiling node model.real_estate_dbt_project.stg_property_sale_listings
+[0m16:58:28.214008 [debug] [Thread-1 (]: Writing injected SQL for node "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m16:58:28.214656 [debug] [Thread-1 (]: Timing info for model.real_estate_dbt_project.stg_property_sale_listings (compile): 2023-07-03 16:58:28.211980 => 2023-07-03 16:58:28.214599
+[0m16:58:28.214869 [debug] [Thread-1 (]: Began executing node model.real_estate_dbt_project.stg_property_sale_listings
+[0m16:58:28.245130 [debug] [Thread-1 (]: Writing runtime sql for node "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m16:58:28.245830 [debug] [Thread-1 (]: Using snowflake connection "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m16:58:28.245974 [debug] [Thread-1 (]: On model.real_estate_dbt_project.stg_property_sale_listings: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "model.real_estate_dbt_project.stg_property_sale_listings"} */
+create or replace   view ANALYTICS.DBT_NDW.stg_property_sale_listings
+  
+   as (
+    select * from raw.realty_mole_property_api.property_sale_listings
+  );
+[0m16:58:28.246095 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:58:28.989973 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad621a-0504-9fbb-0050-3987000a60da
+[0m16:58:28.990409 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on schema 'DBT_NDW'
+[0m16:58:28.990637 [debug] [Thread-1 (]: Timing info for model.real_estate_dbt_project.stg_property_sale_listings (execute): 2023-07-03 16:58:28.214995 => 2023-07-03 16:58:28.990595
+[0m16:58:28.990942 [debug] [Thread-1 (]: On model.real_estate_dbt_project.stg_property_sale_listings: Close
+[0m16:58:29.139001 [debug] [Thread-1 (]: Database Error in model stg_property_sale_listings (models/staging/property_sale_listings/stg_property_sale_listings.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'DBT_NDW'
+  compiled Code at target/run/real_estate_dbt_project/models/staging/property_sale_listings/stg_property_sale_listings.sql
+[0m16:58:29.139667 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7508af0c-3a5d-4f9a-85f9-525dfb4c8117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112da09a0>]}
+[0m16:58:29.140295 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model DBT_NDW.stg_property_sale_listings ........ [[31mERROR[0m in 0.93s]
+[0m16:58:29.142425 [debug] [Thread-1 (]: Finished running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m16:58:29.143484 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:58:29.143832 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:58:29.143949 [debug] [MainThread]: Connection 'model.real_estate_dbt_project.stg_property_sale_listings' was properly closed.
+[0m16:58:29.144085 [info ] [MainThread]: 
+[0m16:58:29.144319 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.18 seconds (3.18s).
+[0m16:58:29.144623 [debug] [MainThread]: Command end result
+[0m16:58:29.150670 [info ] [MainThread]: 
+[0m16:58:29.150984 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m16:58:29.151200 [info ] [MainThread]: 
+[0m16:58:29.151362 [error] [MainThread]: [33mDatabase Error in model stg_property_sale_listings (models/staging/property_sale_listings/stg_property_sale_listings.sql)[0m
+[0m16:58:29.151748 [error] [MainThread]:   003001 (42501): SQL access control error:
+[0m16:58:29.152152 [error] [MainThread]:   Insufficient privileges to operate on schema 'DBT_NDW'
+[0m16:58:29.152496 [error] [MainThread]:   compiled Code at target/run/real_estate_dbt_project/models/staging/property_sale_listings/stg_property_sale_listings.sql
+[0m16:58:29.152849 [info ] [MainThread]: 
+[0m16:58:29.153160 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:58:29.153709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113383370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113383070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133832b0>]}
+[0m16:58:29.154108 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-07-03 17:03:38.132868 | 41661397-7f2e-4d68-8a19-24eb6ebd8aa6 ==============================
+[0m17:03:38.132868 [info ] [MainThread]: Running with dbt=1.4.5
+[0m17:03:38.141558 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/nathanwessel/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m17:03:38.141720 [debug] [MainThread]: Tracking: tracking
+[0m17:03:38.142035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119dbb790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119db9de0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119db8ee0>]}
+[0m17:03:38.313091 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m17:03:38.378334 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:03:38.378851 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:03:38.379747 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.real_estate_dbt_project.example
+[0m17:03:38.390675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '41661397-7f2e-4d68-8a19-24eb6ebd8aa6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119f900d0>]}
+[0m17:03:38.406008 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '41661397-7f2e-4d68-8a19-24eb6ebd8aa6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119f59840>]}
+[0m17:03:38.407092 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 420 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m17:03:38.407661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '41661397-7f2e-4d68-8a19-24eb6ebd8aa6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119f59750>]}
+[0m17:03:38.409295 [info ] [MainThread]: 
+[0m17:03:38.411108 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:03:38.413081 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m17:03:38.444907 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m17:03:38.445446 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m17:03:38.445830 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:03:39.730232 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1 seconds
+[0m17:03:39.737005 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m17:03:39.897451 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_DBT_NDW'
+[0m17:03:39.903508 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DBT_NDW"
+[0m17:03:39.903750 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS_DBT_NDW"} */
+show terse objects in ANALYTICS.DBT_NDW
+[0m17:03:39.903928 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:03:40.706955 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1 seconds
+[0m17:03:40.713614 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: Close
+[0m17:03:40.878683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '41661397-7f2e-4d68-8a19-24eb6ebd8aa6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a2534c0>]}
+[0m17:03:40.880123 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:03:40.880493 [info ] [MainThread]: 
+[0m17:03:40.885110 [debug] [Thread-1 (]: Began running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:03:40.885535 [info ] [Thread-1 (]: 1 of 1 START sql view model DBT_NDW.stg_property_sale_listings ................. [RUN]
+[0m17:03:40.886106 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.real_estate_dbt_project.stg_property_sale_listings'
+[0m17:03:40.886600 [debug] [Thread-1 (]: Began compiling node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:03:40.895650 [debug] [Thread-1 (]: Writing injected SQL for node "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m17:03:40.897423 [debug] [Thread-1 (]: Timing info for model.real_estate_dbt_project.stg_property_sale_listings (compile): 2023-07-03 17:03:40.886947 => 2023-07-03 17:03:40.897345
+[0m17:03:40.898258 [debug] [Thread-1 (]: Began executing node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:03:40.937085 [debug] [Thread-1 (]: Writing runtime sql for node "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m17:03:40.938310 [debug] [Thread-1 (]: Using snowflake connection "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m17:03:40.938696 [debug] [Thread-1 (]: On model.real_estate_dbt_project.stg_property_sale_listings: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "model.real_estate_dbt_project.stg_property_sale_listings"} */
+create or replace   view ANALYTICS.DBT_NDW.stg_property_sale_listings
+  
+   as (
+    select * from raw.realty_mole_property_api.property_sale_listings
+  );
+[0m17:03:40.938962 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:03:41.755264 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad621f-0504-9e30-0050-3987000a0202
+[0m17:03:41.755555 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on schema 'DBT_NDW'
+[0m17:03:41.755815 [debug] [Thread-1 (]: Timing info for model.real_estate_dbt_project.stg_property_sale_listings (execute): 2023-07-03 17:03:40.898439 => 2023-07-03 17:03:41.755769
+[0m17:03:41.755981 [debug] [Thread-1 (]: On model.real_estate_dbt_project.stg_property_sale_listings: Close
+[0m17:03:41.901969 [debug] [Thread-1 (]: Database Error in model stg_property_sale_listings (models/staging/property_sale_listings/stg_property_sale_listings.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'DBT_NDW'
+  compiled Code at target/run/real_estate_dbt_project/models/staging/property_sale_listings/stg_property_sale_listings.sql
+[0m17:03:41.902745 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '41661397-7f2e-4d68-8a19-24eb6ebd8aa6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a2509a0>]}
+[0m17:03:41.903399 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model DBT_NDW.stg_property_sale_listings ........ [[31mERROR[0m in 1.02s]
+[0m17:03:41.905836 [debug] [Thread-1 (]: Finished running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:03:41.907592 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:03:41.908423 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:03:41.908759 [debug] [MainThread]: Connection 'model.real_estate_dbt_project.stg_property_sale_listings' was properly closed.
+[0m17:03:41.909066 [info ] [MainThread]: 
+[0m17:03:41.909588 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.50 seconds (3.50s).
+[0m17:03:41.910155 [debug] [MainThread]: Command end result
+[0m17:03:41.921470 [info ] [MainThread]: 
+[0m17:03:41.921826 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:03:41.922024 [info ] [MainThread]: 
+[0m17:03:41.922209 [error] [MainThread]: [33mDatabase Error in model stg_property_sale_listings (models/staging/property_sale_listings/stg_property_sale_listings.sql)[0m
+[0m17:03:41.922850 [error] [MainThread]:   003001 (42501): SQL access control error:
+[0m17:03:41.923310 [error] [MainThread]:   Insufficient privileges to operate on schema 'DBT_NDW'
+[0m17:03:41.923708 [error] [MainThread]:   compiled Code at target/run/real_estate_dbt_project/models/staging/property_sale_listings/stg_property_sale_listings.sql
+[0m17:03:41.924162 [info ] [MainThread]: 
+[0m17:03:41.924624 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m17:03:41.925073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b1cf2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b1cff40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b1cf340>]}
+[0m17:03:41.925627 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-07-03 17:07:13.214092 | 4380fdad-d61b-40b3-8c2b-9749098bcc2f ==============================
+[0m17:07:13.214092 [info ] [MainThread]: Running with dbt=1.4.5
+[0m17:07:13.218894 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/nathanwessel/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m17:07:13.219070 [debug] [MainThread]: Tracking: tracking
+[0m17:07:13.219359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b23790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b21de0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b20ee0>]}
+[0m17:07:13.281147 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m17:07:13.327065 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:07:13.327310 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:07:13.327715 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.real_estate_dbt_project.example
+[0m17:07:13.335101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4380fdad-d61b-40b3-8c2b-9749098bcc2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077680d0>]}
+[0m17:07:13.346606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4380fdad-d61b-40b3-8c2b-9749098bcc2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10772d840>]}
+[0m17:07:13.346973 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 420 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m17:07:13.347218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4380fdad-d61b-40b3-8c2b-9749098bcc2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10772d750>]}
+[0m17:07:13.348408 [info ] [MainThread]: 
+[0m17:07:13.349913 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:07:13.350689 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m17:07:13.369385 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m17:07:13.369687 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m17:07:13.369869 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:07:14.442544 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1 seconds
+[0m17:07:14.445089 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m17:07:14.597443 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_DBT_NDW'
+[0m17:07:14.602654 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DBT_NDW"
+[0m17:07:14.602861 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS_DBT_NDW"} */
+show terse objects in ANALYTICS.DBT_NDW
+[0m17:07:14.603007 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:07:15.516796 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1 seconds
+[0m17:07:15.519179 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: Close
+[0m17:07:15.673227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4380fdad-d61b-40b3-8c2b-9749098bcc2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077ab4c0>]}
+[0m17:07:15.674251 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:07:15.674693 [info ] [MainThread]: 
+[0m17:07:15.679123 [debug] [Thread-1 (]: Began running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:07:15.679675 [info ] [Thread-1 (]: 1 of 1 START sql view model DBT_NDW.stg_property_sale_listings ................. [RUN]
+[0m17:07:15.680253 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.real_estate_dbt_project.stg_property_sale_listings'
+[0m17:07:15.680439 [debug] [Thread-1 (]: Began compiling node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:07:15.683336 [debug] [Thread-1 (]: Writing injected SQL for node "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m17:07:15.684497 [debug] [Thread-1 (]: Timing info for model.real_estate_dbt_project.stg_property_sale_listings (compile): 2023-07-03 17:07:15.680561 => 2023-07-03 17:07:15.684437
+[0m17:07:15.684706 [debug] [Thread-1 (]: Began executing node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:07:15.711572 [debug] [Thread-1 (]: Writing runtime sql for node "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m17:07:15.712371 [debug] [Thread-1 (]: Using snowflake connection "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m17:07:15.712530 [debug] [Thread-1 (]: On model.real_estate_dbt_project.stg_property_sale_listings: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "model.real_estate_dbt_project.stg_property_sale_listings"} */
+create or replace   view ANALYTICS.DBT_NDW.stg_property_sale_listings
+  
+   as (
+    select * from raw.realty_mole_property_api.property_sale_listings
+  );
+[0m17:07:15.712668 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:07:16.431036 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad6223-0504-9f86-0050-3987000a51f2
+[0m17:07:16.431331 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Database 'RAW' does not exist or not authorized.
+[0m17:07:16.431593 [debug] [Thread-1 (]: Timing info for model.real_estate_dbt_project.stg_property_sale_listings (execute): 2023-07-03 17:07:15.684827 => 2023-07-03 17:07:16.431546
+[0m17:07:16.431758 [debug] [Thread-1 (]: On model.real_estate_dbt_project.stg_property_sale_listings: Close
+[0m17:07:16.576181 [debug] [Thread-1 (]: Database Error in model stg_property_sale_listings (models/staging/property_sale_listings/stg_property_sale_listings.sql)
+  002003 (02000): SQL compilation error:
+  Database 'RAW' does not exist or not authorized.
+  compiled Code at target/run/real_estate_dbt_project/models/staging/property_sale_listings/stg_property_sale_listings.sql
+[0m17:07:16.576880 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4380fdad-d61b-40b3-8c2b-9749098bcc2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077a89a0>]}
+[0m17:07:16.577511 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model DBT_NDW.stg_property_sale_listings ........ [[31mERROR[0m in 0.90s]
+[0m17:07:16.579502 [debug] [Thread-1 (]: Finished running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:07:16.581461 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:07:16.582266 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:07:16.582563 [debug] [MainThread]: Connection 'model.real_estate_dbt_project.stg_property_sale_listings' was properly closed.
+[0m17:07:16.582907 [info ] [MainThread]: 
+[0m17:07:16.583307 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.23 seconds (3.23s).
+[0m17:07:16.583795 [debug] [MainThread]: Command end result
+[0m17:07:16.592850 [info ] [MainThread]: 
+[0m17:07:16.593189 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:07:16.593451 [info ] [MainThread]: 
+[0m17:07:16.593667 [error] [MainThread]: [33mDatabase Error in model stg_property_sale_listings (models/staging/property_sale_listings/stg_property_sale_listings.sql)[0m
+[0m17:07:16.594054 [error] [MainThread]:   002003 (02000): SQL compilation error:
+[0m17:07:16.594246 [error] [MainThread]:   Database 'RAW' does not exist or not authorized.
+[0m17:07:16.594420 [error] [MainThread]:   compiled Code at target/run/real_estate_dbt_project/models/staging/property_sale_listings/stg_property_sale_listings.sql
+[0m17:07:16.594662 [info ] [MainThread]: 
+[0m17:07:16.594998 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m17:07:16.595268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d872b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d87130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d874f0>]}
+[0m17:07:16.595481 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-07-03 17:19:04.214811 | 0c9c63f1-8fce-42ff-b66e-762b3aa303c7 ==============================
+[0m17:19:04.214811 [info ] [MainThread]: Running with dbt=1.4.5
+[0m17:19:04.218998 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/nathanwessel/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m17:19:04.219207 [debug] [MainThread]: Tracking: tracking
+[0m17:19:04.219492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a027010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a025e40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a024310>]}
+[0m17:19:04.293398 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m17:19:04.329461 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:19:04.329719 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:19:04.330170 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.real_estate_dbt_project.example
+[0m17:19:04.338750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0c9c63f1-8fce-42ff-b66e-762b3aa303c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ac500d0>]}
+[0m17:19:04.349019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0c9c63f1-8fce-42ff-b66e-762b3aa303c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ac157e0>]}
+[0m17:19:04.349310 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 420 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m17:19:04.349518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0c9c63f1-8fce-42ff-b66e-762b3aa303c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ac156f0>]}
+[0m17:19:04.351401 [info ] [MainThread]: 
+[0m17:19:04.352882 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:19:04.353602 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m17:19:04.366554 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m17:19:04.366896 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m17:19:04.367083 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:19:05.497044 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1 seconds
+[0m17:19:05.500559 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m17:19:05.649453 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_DBT_NDW'
+[0m17:19:05.656270 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DBT_NDW"
+[0m17:19:05.656511 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS_DBT_NDW"} */
+show terse objects in ANALYTICS.DBT_NDW
+[0m17:19:05.656659 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:19:06.401222 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1 seconds
+[0m17:19:06.403676 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: Close
+[0m17:19:06.569112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0c9c63f1-8fce-42ff-b66e-762b3aa303c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11abfee30>]}
+[0m17:19:06.570136 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:19:06.570538 [info ] [MainThread]: 
+[0m17:19:06.573645 [debug] [Thread-1 (]: Began running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:19:06.573973 [info ] [Thread-1 (]: 1 of 1 START sql view model DBT_NDW.stg_property_sale_listings ................. [RUN]
+[0m17:19:06.574980 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.real_estate_dbt_project.stg_property_sale_listings'
+[0m17:19:06.575370 [debug] [Thread-1 (]: Began compiling node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:19:06.577488 [debug] [Thread-1 (]: Writing injected SQL for node "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m17:19:06.578279 [debug] [Thread-1 (]: Timing info for model.real_estate_dbt_project.stg_property_sale_listings (compile): 2023-07-03 17:19:06.575502 => 2023-07-03 17:19:06.578221
+[0m17:19:06.578603 [debug] [Thread-1 (]: Began executing node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:19:06.606170 [debug] [Thread-1 (]: Writing runtime sql for node "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m17:19:06.607189 [debug] [Thread-1 (]: Using snowflake connection "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m17:19:06.607368 [debug] [Thread-1 (]: On model.real_estate_dbt_project.stg_property_sale_listings: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "model.real_estate_dbt_project.stg_property_sale_listings"} */
+create or replace   view ANALYTICS.DBT_NDW.stg_property_sale_listings
+  
+   as (
+    select * from raw.realty_mole_property_api.property_sale_listings
+  );
+[0m17:19:06.607513 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:19:07.658051 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1 seconds
+[0m17:19:07.679948 [debug] [Thread-1 (]: Timing info for model.real_estate_dbt_project.stg_property_sale_listings (execute): 2023-07-03 17:19:06.578904 => 2023-07-03 17:19:07.679896
+[0m17:19:07.680238 [debug] [Thread-1 (]: On model.real_estate_dbt_project.stg_property_sale_listings: Close
+[0m17:19:07.818268 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0c9c63f1-8fce-42ff-b66e-762b3aa303c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ac949a0>]}
+[0m17:19:07.819038 [info ] [Thread-1 (]: 1 of 1 OK created sql view model DBT_NDW.stg_property_sale_listings ............ [[32mSUCCESS 1[0m in 1.24s]
+[0m17:19:07.821462 [debug] [Thread-1 (]: Finished running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:19:07.822921 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:19:07.823707 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:19:07.823987 [debug] [MainThread]: Connection 'model.real_estate_dbt_project.stg_property_sale_listings' was properly closed.
+[0m17:19:07.824267 [info ] [MainThread]: 
+[0m17:19:07.824654 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.47 seconds (3.47s).
+[0m17:19:07.825172 [debug] [MainThread]: Command end result
+[0m17:19:07.833327 [info ] [MainThread]: 
+[0m17:19:07.833935 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:19:07.834297 [info ] [MainThread]: 
+[0m17:19:07.834637 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m17:19:07.835082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118f32380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b36bdc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b3689a0>]}
+[0m17:19:07.835479 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-07-03 17:19:39.374157 | 94463f9d-8c20-441e-83a5-23a581be0c0f ==============================
+[0m17:19:39.374157 [info ] [MainThread]: Running with dbt=1.4.5
+[0m17:19:39.377541 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/nathanwessel/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'resource_types': [], 'which': 'build', 'rpc_method': 'build'}
+[0m17:19:39.377721 [debug] [MainThread]: Tracking: tracking
+[0m17:19:39.378043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bbb7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bb9e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bb8f10>]}
+[0m17:19:39.519453 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m17:19:39.595736 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:19:39.596526 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:19:39.598384 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.real_estate_dbt_project.example
+[0m17:19:39.615307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '94463f9d-8c20-441e-83a5-23a581be0c0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d900d0>]}
+[0m17:19:39.628158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '94463f9d-8c20-441e-83a5-23a581be0c0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d59b40>]}
+[0m17:19:39.628510 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 420 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m17:19:39.628754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '94463f9d-8c20-441e-83a5-23a581be0c0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d59780>]}
+[0m17:19:39.630069 [info ] [MainThread]: 
+[0m17:19:39.632966 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:19:39.635682 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m17:19:39.663546 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m17:19:39.663885 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m17:19:39.664069 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:19:40.908418 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1 seconds
+[0m17:19:40.911326 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m17:19:41.058049 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_DBT_NDW'
+[0m17:19:41.072324 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DBT_NDW"
+[0m17:19:41.072692 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS_DBT_NDW"} */
+show terse objects in ANALYTICS.DBT_NDW
+[0m17:19:41.072892 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:19:41.790528 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 1 seconds
+[0m17:19:41.793062 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: Close
+[0m17:19:41.934765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '94463f9d-8c20-441e-83a5-23a581be0c0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10705b4f0>]}
+[0m17:19:41.936051 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:19:41.936568 [info ] [MainThread]: 
+[0m17:19:41.940832 [debug] [Thread-1 (]: Began running node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m17:19:41.941150 [info ] [Thread-1 (]: 1 of 3 START test source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID  [RUN]
+[0m17:19:41.941703 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46'
+[0m17:19:41.941927 [debug] [Thread-1 (]: Began compiling node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m17:19:41.953899 [debug] [Thread-1 (]: Writing injected SQL for node "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"
+[0m17:19:41.954859 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46 (compile): 2023-07-03 17:19:41.942066 => 2023-07-03 17:19:41.954795
+[0m17:19:41.955077 [debug] [Thread-1 (]: Began executing node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m17:19:41.973539 [debug] [Thread-1 (]: Writing runtime sql for node "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"
+[0m17:19:41.974532 [debug] [Thread-1 (]: Using snowflake connection "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"
+[0m17:19:41.974701 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select _AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID
+from raw.realty_mole_property_api.property_sale_listings
+where _AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID is null
+
+
+
+      
+    ) dbt_internal_test
+[0m17:19:41.974860 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:19:43.589819 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2 seconds
+[0m17:19:43.606074 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46 (execute): 2023-07-03 17:19:41.955216 => 2023-07-03 17:19:43.606003
+[0m17:19:43.606365 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46: Close
+[0m17:19:43.737505 [info ] [Thread-1 (]: 1 of 3 PASS source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID  [[32mPASS[0m in 1.80s]
+[0m17:19:43.739861 [debug] [Thread-1 (]: Finished running node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m17:19:43.740414 [debug] [Thread-1 (]: Began running node test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0
+[0m17:19:43.740837 [info ] [Thread-1 (]: 2 of 3 START test source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID  [RUN]
+[0m17:19:43.741364 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0'
+[0m17:19:43.741528 [debug] [Thread-1 (]: Began compiling node test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0
+[0m17:19:43.748603 [debug] [Thread-1 (]: Writing injected SQL for node "test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0"
+[0m17:19:43.749220 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0 (compile): 2023-07-03 17:19:43.741637 => 2023-07-03 17:19:43.749168
+[0m17:19:43.749502 [debug] [Thread-1 (]: Began executing node test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0
+[0m17:19:43.752982 [debug] [Thread-1 (]: Writing runtime sql for node "test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0"
+[0m17:19:43.754231 [debug] [Thread-1 (]: Using snowflake connection "test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0"
+[0m17:19:43.754589 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    _AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID as unique_field,
+    count(*) as n_records
+
+from raw.realty_mole_property_api.property_sale_listings
+where _AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID is not null
+group by _AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m17:19:43.754842 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:19:45.583024 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2 seconds
+[0m17:19:45.586300 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0 (execute): 2023-07-03 17:19:43.749853 => 2023-07-03 17:19:45.586199
+[0m17:19:45.586684 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0: Close
+[0m17:19:45.732613 [error] [Thread-1 (]: 2 of 3 FAIL 513 source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID  [[31mFAIL 513[0m in 1.99s]
+[0m17:19:45.733530 [debug] [Thread-1 (]: Finished running node test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0
+[0m17:19:45.734876 [debug] [Thread-1 (]: Began running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:19:45.735404 [info ] [Thread-1 (]: 3 of 3 SKIP relation DBT_NDW.stg_property_sale_listings ........................ [[33mSKIP[0m]
+[0m17:19:45.736070 [debug] [Thread-1 (]: Finished running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:19:45.738490 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:19:45.738929 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:19:45.739063 [debug] [MainThread]: Connection 'test.real_estate_dbt_project.source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.f304a60ff0' was properly closed.
+[0m17:19:45.739220 [info ] [MainThread]: 
+[0m17:19:45.739427 [info ] [MainThread]: Finished running 2 tests, 1 view model in 0 hours 0 minutes and 6.11 seconds (6.11s).
+[0m17:19:45.740259 [debug] [MainThread]: Command end result
+[0m17:19:45.751343 [info ] [MainThread]: 
+[0m17:19:45.752214 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:19:45.752561 [info ] [MainThread]: 
+[0m17:19:45.752761 [error] [MainThread]: [31mFailure in test source_unique_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID (models/staging/property_sale_listings/src_property_sale_listings.yml)[0m
+[0m17:19:45.752933 [error] [MainThread]:   Got 513 results, configured to fail if != 0
+[0m17:19:45.753089 [info ] [MainThread]: 
+[0m17:19:45.753582 [info ] [MainThread]:   compiled Code at target/compiled/real_estate_dbt_project/models/staging/property_sale_listings/src_property_sale_listings.yml/source_unique_realty_mole_prop_63c5f22da60d46a3fd1151a3a7ff960c.sql
+[0m17:19:45.753757 [info ] [MainThread]: 
+[0m17:19:45.753915 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=1 TOTAL=3
+[0m17:19:45.754160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11038ed10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d583a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d59720>]}
+[0m17:19:45.754353 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-07-03 17:22:20.831125 | d4a52cb6-f733-4eb7-9609-6fbbfd1860b1 ==============================
+[0m17:22:20.831125 [info ] [MainThread]: Running with dbt=1.4.5
+[0m17:22:20.836924 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/nathanwessel/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'resource_types': [], 'which': 'build', 'rpc_method': 'build'}
+[0m17:22:20.837182 [debug] [MainThread]: Tracking: tracking
+[0m17:22:20.837493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e2ff40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c32a1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c32b6a0>]}
+[0m17:22:20.911093 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m17:22:20.942836 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 51 files added, 0 files changed.
+[0m17:22:20.943188 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/equal_rowcount.sql
+[0m17:22:20.943374 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/not_null_proportion.sql
+[0m17:22:20.943535 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_relations_by_prefix.sql
+[0m17:22:20.943685 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/safe_subtract.sql
+[0m17:22:20.943831 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/pretty_time.sql
+[0m17:22:20.943978 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/equality.sql
+[0m17:22:20.944120 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/log_info.sql
+[0m17:22:20.944262 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/not_accepted_values.sql
+[0m17:22:20.944404 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/width_bucket.sql
+[0m17:22:20.944543 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/not_empty_string.sql
+[0m17:22:20.944686 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_query_results_as_dict.sql
+[0m17:22:20.944825 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/generate_surrogate_key.sql
+[0m17:22:20.944965 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/star.sql
+[0m17:22:20.945109 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/web/get_url_host.sql
+[0m17:22:20.945247 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/groupby.sql
+[0m17:22:20.945387 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/at_least_one.sql
+[0m17:22:20.945528 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/not_constant.sql
+[0m17:22:20.945670 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/accepted_range.sql
+[0m17:22:20.945811 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/union.sql
+[0m17:22:20.945952 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/date_spine.sql
+[0m17:22:20.946091 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/web/get_url_parameter.sql
+[0m17:22:20.946230 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/unique_combination_of_columns.sql
+[0m17:22:20.946366 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/_is_relation.sql
+[0m17:22:20.946501 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_filtered_columns_in_relation.sql
+[0m17:22:20.946642 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_relations_by_pattern.sql
+[0m17:22:20.946780 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/mutually_exclusive_ranges.sql
+[0m17:22:20.946918 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/haversine_distance.sql
+[0m17:22:20.947054 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/nullcheck.sql
+[0m17:22:20.947191 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_single_value.sql
+[0m17:22:20.947326 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/safe_add.sql
+[0m17:22:20.947462 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/fewer_rows_than.sql
+[0m17:22:20.947601 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/generate_series.sql
+[0m17:22:20.947738 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_table_types_sql.sql
+[0m17:22:20.947877 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/slugify.sql
+[0m17:22:20.948014 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/_is_ephemeral.sql
+[0m17:22:20.948152 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/recency.sql
+[0m17:22:20.948287 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/web/get_url_path.sql
+[0m17:22:20.948426 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/safe_divide.sql
+[0m17:22:20.948562 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/cardinality_equality.sql
+[0m17:22:20.948734 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/relationships_where.sql
+[0m17:22:20.948872 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/sequential_values.sql
+[0m17:22:20.949008 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/pivot.sql
+[0m17:22:20.949145 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/nullcheck_table.sql
+[0m17:22:20.949280 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_tables_by_prefix_sql.sql
+[0m17:22:20.949418 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_tables_by_pattern_sql.sql
+[0m17:22:20.949557 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/pretty_log_format.sql
+[0m17:22:20.949691 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/deduplicate.sql
+[0m17:22:20.949826 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/surrogate_key.sql
+[0m17:22:20.950270 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/unpivot.sql
+[0m17:22:20.950738 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/expression_is_true.sql
+[0m17:22:20.951011 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_column_values.sql
+[0m17:22:21.156556 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.real_estate_dbt_project.example
+[0m17:22:21.161221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd4a52cb6-f733-4eb7-9609-6fbbfd1860b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d0d5540>]}
+[0m17:22:21.169185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd4a52cb6-f733-4eb7-9609-6fbbfd1860b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d098430>]}
+[0m17:22:21.169624 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 420 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m17:22:21.170099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4a52cb6-f733-4eb7-9609-6fbbfd1860b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083a3e20>]}
+[0m17:22:21.171855 [info ] [MainThread]: 
+[0m17:22:21.173344 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:22:21.174083 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m17:22:21.187103 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m17:22:21.187394 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m17:22:21.187566 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:22:22.338685 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1 seconds
+[0m17:22:22.340831 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m17:22:22.490276 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_DBT_NDW'
+[0m17:22:22.498261 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DBT_NDW"
+[0m17:22:22.498530 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS_DBT_NDW"} */
+show terse objects in ANALYTICS.DBT_NDW
+[0m17:22:22.498697 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:22:23.514793 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 1 seconds
+[0m17:22:23.517371 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: Close
+[0m17:22:23.706543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4a52cb6-f733-4eb7-9609-6fbbfd1860b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c2bdf30>]}
+[0m17:22:23.707697 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:22:23.708199 [info ] [MainThread]: 
+[0m17:22:23.712898 [debug] [Thread-1 (]: Began running node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT.d5b724a6eb
+[0m17:22:23.713482 [info ] [Thread-1 (]: 1 of 3 START test source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT  [RUN]
+[0m17:22:23.714144 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT.d5b724a6eb'
+[0m17:22:23.714590 [debug] [Thread-1 (]: Began compiling node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT.d5b724a6eb
+[0m17:22:23.726119 [debug] [Thread-1 (]: Writing injected SQL for node "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT.d5b724a6eb"
+[0m17:22:23.726695 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT.d5b724a6eb (compile): 2023-07-03 17:22:23.714826 => 2023-07-03 17:22:23.726644
+[0m17:22:23.726889 [debug] [Thread-1 (]: Began executing node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT.d5b724a6eb
+[0m17:22:23.753234 [debug] [Thread-1 (]: Writing runtime sql for node "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT.d5b724a6eb"
+[0m17:22:23.754159 [debug] [Thread-1 (]: Using snowflake connection "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT.d5b724a6eb"
+[0m17:22:23.754321 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT.d5b724a6eb: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT.d5b724a6eb"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select _AIRBYTE_EMMITED_AT
+from raw.realty_mole_property_api.property_sale_listings
+where _AIRBYTE_EMMITED_AT is null
+
+
+
+      
+    ) dbt_internal_test
+[0m17:22:23.754461 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:22:24.592615 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad6232-0504-9fbb-0050-3987000a627a
+[0m17:22:24.593072 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 12 at position 7
+invalid identifier '_AIRBYTE_EMMITED_AT'
+[0m17:22:24.593487 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT.d5b724a6eb (execute): 2023-07-03 17:22:23.727011 => 2023-07-03 17:22:24.593409
+[0m17:22:24.593960 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT.d5b724a6eb: Close
+[0m17:22:24.751209 [debug] [Thread-1 (]: Database Error in test source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT (models/staging/property_sale_listings/src_property_sale_listings.yml)
+  000904 (42000): SQL compilation error: error line 12 at position 7
+  invalid identifier '_AIRBYTE_EMMITED_AT'
+  compiled Code at target/run/real_estate_dbt_project/models/staging/property_sale_listings/src_property_sale_listings.yml/source_not_null_realty_mole_pr_7f1cbe6b133c3b2fd5884310674af600.sql
+[0m17:22:24.751868 [error] [Thread-1 (]: 1 of 3 ERROR source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT  [[31mERROR[0m in 1.04s]
+[0m17:22:24.753967 [debug] [Thread-1 (]: Finished running node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT.d5b724a6eb
+[0m17:22:24.754339 [debug] [Thread-1 (]: Began running node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m17:22:24.754610 [info ] [Thread-1 (]: 2 of 3 START test source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID  [RUN]
+[0m17:22:24.755363 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46'
+[0m17:22:24.755808 [debug] [Thread-1 (]: Began compiling node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m17:22:24.763401 [debug] [Thread-1 (]: Writing injected SQL for node "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"
+[0m17:22:24.764434 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46 (compile): 2023-07-03 17:22:24.756047 => 2023-07-03 17:22:24.764360
+[0m17:22:24.764669 [debug] [Thread-1 (]: Began executing node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m17:22:24.766908 [debug] [Thread-1 (]: Writing runtime sql for node "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"
+[0m17:22:24.767818 [debug] [Thread-1 (]: Using snowflake connection "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"
+[0m17:22:24.768194 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select _AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID
+from raw.realty_mole_property_api.property_sale_listings
+where _AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID is null
+
+
+
+      
+    ) dbt_internal_test
+[0m17:22:24.768461 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:22:25.474368 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1 seconds
+[0m17:22:25.484035 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46 (execute): 2023-07-03 17:22:24.764811 => 2023-07-03 17:22:25.483962
+[0m17:22:25.484318 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46: Close
+[0m17:22:25.637273 [info ] [Thread-1 (]: 2 of 3 PASS source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID  [[32mPASS[0m in 0.88s]
+[0m17:22:25.638071 [debug] [Thread-1 (]: Finished running node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m17:22:25.639029 [debug] [Thread-1 (]: Began running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:22:25.639476 [info ] [Thread-1 (]: 3 of 3 SKIP relation DBT_NDW.stg_property_sale_listings ........................ [[33mSKIP[0m]
+[0m17:22:25.639984 [debug] [Thread-1 (]: Finished running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:22:25.641439 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:22:25.642933 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:22:25.643320 [debug] [MainThread]: Connection 'test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46' was properly closed.
+[0m17:22:25.643519 [info ] [MainThread]: 
+[0m17:22:25.643727 [info ] [MainThread]: Finished running 2 tests, 1 view model in 0 hours 0 minutes and 4.47 seconds (4.47s).
+[0m17:22:25.644023 [debug] [MainThread]: Command end result
+[0m17:22:25.652421 [info ] [MainThread]: 
+[0m17:22:25.662462 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:22:25.662671 [info ] [MainThread]: 
+[0m17:22:25.662855 [error] [MainThread]: [33mDatabase Error in test source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMMITED_AT (models/staging/property_sale_listings/src_property_sale_listings.yml)[0m
+[0m17:22:25.663022 [error] [MainThread]:   000904 (42000): SQL compilation error: error line 12 at position 7
+[0m17:22:25.663175 [error] [MainThread]:   invalid identifier '_AIRBYTE_EMMITED_AT'
+[0m17:22:25.663563 [error] [MainThread]:   compiled Code at target/run/real_estate_dbt_project/models/staging/property_sale_listings/src_property_sale_listings.yml/source_not_null_realty_mole_pr_7f1cbe6b133c3b2fd5884310674af600.sql
+[0m17:22:25.663745 [info ] [MainThread]: 
+[0m17:22:25.663915 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=1 TOTAL=3
+[0m17:22:25.664147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d533910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d80e020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d80e500>]}
+[0m17:22:25.664349 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-07-03 17:23:26.608106 | ecc4f082-20fd-48e4-8513-0500a332816f ==============================
+[0m17:23:26.608106 [info ] [MainThread]: Running with dbt=1.4.5
+[0m17:23:26.613960 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/nathanwessel/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'resource_types': [], 'which': 'build', 'rpc_method': 'build'}
+[0m17:23:26.614221 [debug] [MainThread]: Tracking: tracking
+[0m17:23:26.616625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10412ff10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106623310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106622fb0>]}
+[0m17:23:26.691335 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m17:23:26.739897 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 51 files added, 0 files changed.
+[0m17:23:26.740268 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/union.sql
+[0m17:23:26.740456 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/width_bucket.sql
+[0m17:23:26.741004 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/unique_combination_of_columns.sql
+[0m17:23:26.741195 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/date_spine.sql
+[0m17:23:26.741354 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_relations_by_pattern.sql
+[0m17:23:26.741506 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/fewer_rows_than.sql
+[0m17:23:26.741658 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/expression_is_true.sql
+[0m17:23:26.741803 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/cardinality_equality.sql
+[0m17:23:26.741950 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/_is_relation.sql
+[0m17:23:26.742091 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/nullcheck_table.sql
+[0m17:23:26.742230 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_query_results_as_dict.sql
+[0m17:23:26.742370 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/not_accepted_values.sql
+[0m17:23:26.742512 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/log_info.sql
+[0m17:23:26.742651 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_filtered_columns_in_relation.sql
+[0m17:23:26.742788 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/web/get_url_path.sql
+[0m17:23:26.742926 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_table_types_sql.sql
+[0m17:23:26.743060 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/generate_surrogate_key.sql
+[0m17:23:26.743195 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/pivot.sql
+[0m17:23:26.743327 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_tables_by_prefix_sql.sql
+[0m17:23:26.743461 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/at_least_one.sql
+[0m17:23:26.743595 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/slugify.sql
+[0m17:23:26.743729 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/recency.sql
+[0m17:23:26.743863 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/mutually_exclusive_ranges.sql
+[0m17:23:26.743995 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/pretty_log_format.sql
+[0m17:23:26.744127 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/unpivot.sql
+[0m17:23:26.744264 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/web/get_url_host.sql
+[0m17:23:26.744397 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/haversine_distance.sql
+[0m17:23:26.744531 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/sequential_values.sql
+[0m17:23:26.744667 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/_is_ephemeral.sql
+[0m17:23:26.744802 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_relations_by_prefix.sql
+[0m17:23:26.744936 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/generate_series.sql
+[0m17:23:26.745073 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/safe_divide.sql
+[0m17:23:26.745210 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/star.sql
+[0m17:23:26.745349 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/safe_subtract.sql
+[0m17:23:26.745483 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/nullcheck.sql
+[0m17:23:26.745616 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/relationships_where.sql
+[0m17:23:26.745750 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/not_empty_string.sql
+[0m17:23:26.745884 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/deduplicate.sql
+[0m17:23:26.746018 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/equal_rowcount.sql
+[0m17:23:26.746185 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/web/get_url_parameter.sql
+[0m17:23:26.746322 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/safe_add.sql
+[0m17:23:26.746455 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_single_value.sql
+[0m17:23:26.746593 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/accepted_range.sql
+[0m17:23:26.746727 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/groupby.sql
+[0m17:23:26.746865 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/surrogate_key.sql
+[0m17:23:26.747143 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/not_null_proportion.sql
+[0m17:23:26.747340 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/equality.sql
+[0m17:23:26.747493 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_column_values.sql
+[0m17:23:26.747634 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/jinja_helpers/pretty_time.sql
+[0m17:23:26.747794 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/sql/get_tables_by_pattern_sql.sql
+[0m17:23:26.747929 [debug] [MainThread]: Partial parsing: added file: dbt_utils://macros/generic_tests/not_constant.sql
+[0m17:23:27.055774 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.real_estate_dbt_project.example
+[0m17:23:27.063728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ecc4f082-20fd-48e4-8513-0500a332816f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067d8be0>]}
+[0m17:23:27.074928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ecc4f082-20fd-48e4-8513-0500a332816f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1038a3e20>]}
+[0m17:23:27.075275 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 420 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m17:23:27.075505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ecc4f082-20fd-48e4-8513-0500a332816f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10412ff70>]}
+[0m17:23:27.076515 [info ] [MainThread]: 
+[0m17:23:27.078107 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:23:27.079078 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m17:23:27.094720 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m17:23:27.095260 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m17:23:27.095579 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:23:28.479721 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1 seconds
+[0m17:23:28.481859 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m17:23:28.685482 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_DBT_NDW'
+[0m17:23:28.692200 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DBT_NDW"
+[0m17:23:28.692471 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "connection_name": "list_ANALYTICS_DBT_NDW"} */
+show terse objects in ANALYTICS.DBT_NDW
+[0m17:23:28.692632 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:23:29.503937 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 1 seconds
+[0m17:23:29.506358 [debug] [ThreadPool]: On list_ANALYTICS_DBT_NDW: Close
+[0m17:23:29.647687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ecc4f082-20fd-48e4-8513-0500a332816f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065ba950>]}
+[0m17:23:29.648713 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:23:29.649031 [info ] [MainThread]: 
+[0m17:23:29.654135 [debug] [Thread-1 (]: Began running node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMITTED_AT.bc4832cfab
+[0m17:23:29.654690 [info ] [Thread-1 (]: 1 of 3 START test source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMITTED_AT  [RUN]
+[0m17:23:29.655390 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMITTED_AT.bc4832cfab'
+[0m17:23:29.655596 [debug] [Thread-1 (]: Began compiling node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMITTED_AT.bc4832cfab
+[0m17:23:29.669915 [debug] [Thread-1 (]: Writing injected SQL for node "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMITTED_AT.bc4832cfab"
+[0m17:23:29.673954 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMITTED_AT.bc4832cfab (compile): 2023-07-03 17:23:29.655723 => 2023-07-03 17:23:29.673893
+[0m17:23:29.674154 [debug] [Thread-1 (]: Began executing node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMITTED_AT.bc4832cfab
+[0m17:23:29.690505 [debug] [Thread-1 (]: Writing runtime sql for node "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMITTED_AT.bc4832cfab"
+[0m17:23:29.691411 [debug] [Thread-1 (]: Using snowflake connection "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMITTED_AT.bc4832cfab"
+[0m17:23:29.691566 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMITTED_AT.bc4832cfab: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMITTED_AT.bc4832cfab"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select _AIRBYTE_EMITTED_AT
+from raw.realty_mole_property_api.property_sale_listings
+where _AIRBYTE_EMITTED_AT is null
+
+
+
+      
+    ) dbt_internal_test
+[0m17:23:29.691701 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:23:30.938290 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1 seconds
+[0m17:23:30.948328 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMITTED_AT.bc4832cfab (execute): 2023-07-03 17:23:29.674265 => 2023-07-03 17:23:30.948262
+[0m17:23:30.948575 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMITTED_AT.bc4832cfab: Close
+[0m17:23:31.092769 [info ] [Thread-1 (]: 1 of 3 PASS source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMITTED_AT  [[32mPASS[0m in 1.44s]
+[0m17:23:31.095619 [debug] [Thread-1 (]: Finished running node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_EMITTED_AT.bc4832cfab
+[0m17:23:31.096712 [debug] [Thread-1 (]: Began running node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m17:23:31.097157 [info ] [Thread-1 (]: 2 of 3 START test source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID  [RUN]
+[0m17:23:31.097731 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46'
+[0m17:23:31.097924 [debug] [Thread-1 (]: Began compiling node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m17:23:31.101983 [debug] [Thread-1 (]: Writing injected SQL for node "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"
+[0m17:23:31.102519 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46 (compile): 2023-07-03 17:23:31.098045 => 2023-07-03 17:23:31.102472
+[0m17:23:31.102695 [debug] [Thread-1 (]: Began executing node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m17:23:31.104652 [debug] [Thread-1 (]: Writing runtime sql for node "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"
+[0m17:23:31.105364 [debug] [Thread-1 (]: Using snowflake connection "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"
+[0m17:23:31.105500 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select _AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID
+from raw.realty_mole_property_api.property_sale_listings
+where _AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID is null
+
+
+
+      
+    ) dbt_internal_test
+[0m17:23:31.105629 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:23:31.863852 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1 seconds
+[0m17:23:31.866695 [debug] [Thread-1 (]: Timing info for test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46 (execute): 2023-07-03 17:23:31.102810 => 2023-07-03 17:23:31.866599
+[0m17:23:31.867087 [debug] [Thread-1 (]: On test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46: Close
+[0m17:23:32.025300 [info ] [Thread-1 (]: 2 of 3 PASS source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID  [[32mPASS[0m in 0.93s]
+[0m17:23:32.026125 [debug] [Thread-1 (]: Finished running node test.real_estate_dbt_project.source_not_null_realty_mole_property_api_property_sale_listings__AIRBYTE_PROPERTY_SALE_LISTINGS_HASHID.b2bae4aa46
+[0m17:23:32.027895 [debug] [Thread-1 (]: Began running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:23:32.028676 [info ] [Thread-1 (]: 3 of 3 START sql view model DBT_NDW.stg_property_sale_listings ................. [RUN]
+[0m17:23:32.029595 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.real_estate_dbt_project.stg_property_sale_listings'
+[0m17:23:32.029835 [debug] [Thread-1 (]: Began compiling node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:23:32.031995 [debug] [Thread-1 (]: Writing injected SQL for node "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m17:23:32.032853 [debug] [Thread-1 (]: Timing info for model.real_estate_dbt_project.stg_property_sale_listings (compile): 2023-07-03 17:23:32.029953 => 2023-07-03 17:23:32.032800
+[0m17:23:32.033037 [debug] [Thread-1 (]: Began executing node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:23:32.056259 [debug] [Thread-1 (]: Writing runtime sql for node "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m17:23:32.057636 [debug] [Thread-1 (]: Using snowflake connection "model.real_estate_dbt_project.stg_property_sale_listings"
+[0m17:23:32.058904 [debug] [Thread-1 (]: On model.real_estate_dbt_project.stg_property_sale_listings: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "real_estate_dbt_project", "target_name": "dev", "node_id": "model.real_estate_dbt_project.stg_property_sale_listings"} */
+create or replace   view ANALYTICS.DBT_NDW.stg_property_sale_listings
+  
+   as (
+    select * from raw.realty_mole_property_api.property_sale_listings
+  );
+[0m17:23:32.059236 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:23:32.981414 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1 seconds
+[0m17:23:33.002888 [debug] [Thread-1 (]: Timing info for model.real_estate_dbt_project.stg_property_sale_listings (execute): 2023-07-03 17:23:32.033148 => 2023-07-03 17:23:33.002839
+[0m17:23:33.003161 [debug] [Thread-1 (]: On model.real_estate_dbt_project.stg_property_sale_listings: Close
+[0m17:23:33.156905 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecc4f082-20fd-48e4-8513-0500a332816f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120fcf6d0>]}
+[0m17:23:33.157638 [info ] [Thread-1 (]: 3 of 3 OK created sql view model DBT_NDW.stg_property_sale_listings ............ [[32mSUCCESS 1[0m in 1.13s]
+[0m17:23:33.158161 [debug] [Thread-1 (]: Finished running node model.real_estate_dbt_project.stg_property_sale_listings
+[0m17:23:33.159708 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:23:33.160511 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:23:33.160833 [debug] [MainThread]: Connection 'model.real_estate_dbt_project.stg_property_sale_listings' was properly closed.
+[0m17:23:33.161120 [info ] [MainThread]: 
+[0m17:23:33.161526 [info ] [MainThread]: Finished running 2 tests, 1 view model in 0 hours 0 minutes and 6.08 seconds (6.08s).
+[0m17:23:33.162301 [debug] [MainThread]: Command end result
+[0m17:23:33.169592 [info ] [MainThread]: 
+[0m17:23:33.169899 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:23:33.170445 [info ] [MainThread]: 
+[0m17:23:33.170656 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m17:23:33.171217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10412ff70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065ba950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120f8a6b0>]}
+[0m17:23:33.171463 [debug] [MainThread]: Flushing usage events
